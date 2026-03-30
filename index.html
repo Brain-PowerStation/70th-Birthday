@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>조선례 여사님 칠순 초대장</title>
     
-    <!-- 카카오톡/SNS 공유 시 보이는 정보 설정 -->
+    <!-- 카카오톡/SNS 공유 시 보이는 정보 설정 (OG 태그) -->
     <meta property="og:title" content="조선례 여사님 칠순 초대장">
     <meta property="og:description" content="2026년 6월 6일 토요일 오후 5시 | 마벨리에 평촌점">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?q=80&w=1000&auto=format&fit=crop">
     <meta property="og:type" content="website">
     
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,12 +32,19 @@
 </head>
 <body class="text-gray-800 antialiased">
 
+    <!-- Top Decoration Image -->
+    <div class="w-full overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?q=80&w=1000&auto=format&fit=crop" 
+             alt="초대장 상단 장식" 
+             class="w-full h-48 md:h-64 object-cover object-center opacity-80">
+    </div>
+
     <!-- Hero Section -->
-    <section class="relative min-h-screen flex flex-col items-center justify-center bg-white px-6 py-20 shadow-sm">
+    <section class="relative flex flex-col items-center justify-center bg-white px-6 py-16 shadow-sm">
         <div class="fade-in text-center">
             <p class="text-lg tracking-[0.2em] text-amber-700 mb-4">고희연(古稀宴)</p>
             <h1 class="serif-title text-4xl md:text-5xl font-bold mb-6 leading-tight">
-                조선례 여사님<br>칠순 잔치
+                조선례 여사님<br>칠순 잔치에<br>초대합니다
             </h1>
             <div class="w-12 h-[1px] bg-amber-300 mx-auto mb-8"></div>
             <p class="text-gray-600 leading-relaxed text-sm md:text-base">
@@ -46,17 +54,11 @@
             </p>
         </div>
 
-        <div class="mt-16 fade-in delay-300">
+        <div class="mt-12 fade-in delay-300">
             <div class="text-center">
                 <p class="text-2xl font-semibold mb-2">2026년 6월 6일</p>
                 <p class="text-gray-500 tracking-widest text-base">토요일 오후 5시</p>
             </div>
-        </div>
-
-        <div class="absolute bottom-10 animate-bounce">
-            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-            </svg>
         </div>
     </section>
 
