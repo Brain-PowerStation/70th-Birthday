@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>조선례 여사님 칠순 초대장</title>
     
-    <!-- 카카오톡/SNS 공유 시 보이는 정보 설정 (OG 태그) -->
+    <!-- 카카오톡/SNS 공유 설정 -->
     <meta property="og:title" content="조선례 여사님 칠순 초대장">
     <meta property="og:description" content="2026년 6월 6일 토요일 오후 5시 | 마벨리에 평촌점">
     <meta property="og:image" content="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?q=80&w=1000&auto=format&fit=crop">
@@ -17,6 +17,7 @@
         body {
             font-family: 'Nanum Myeongjo', serif;
             background-color: #fcfaf7;
+            word-break: keep-all;
         }
         .serif-title {
             font-family: 'Noto Serif KR', serif;
@@ -32,84 +33,84 @@
 </head>
 <body class="text-gray-800 antialiased">
 
-    <!-- Top Decoration Image -->
+    <!-- 상단 꽃 장식 -->
     <div class="w-full overflow-hidden">
         <img src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?q=80&w=1000&auto=format&fit=crop" 
              alt="초대장 상단 장식" 
-             class="w-full h-48 md:h-64 object-cover object-center opacity-80">
+             class="w-full h-56 md:h-72 object-cover object-center opacity-90">
     </div>
 
-    <!-- Hero Section -->
-    <section class="relative flex flex-col items-center justify-center bg-white px-6 py-16 shadow-sm">
+    <!-- 메인 섹션 -->
+    <section class="relative flex flex-col items-center justify-center bg-white px-6 py-20 shadow-sm">
         <div class="fade-in text-center">
-            <p class="text-lg tracking-[0.2em] text-amber-700 mb-4">고희연(古稀宴)</p>
-            <h1 class="serif-title text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            <p class="text-xl tracking-[0.2em] text-amber-700 mb-8 font-bold">고희연(古稀宴)</p>
+            <h1 class="serif-title text-4xl md:text-5xl font-bold mb-10 leading-[1.6]">
                 조선례 여사님<br>칠순 잔치에<br>초대합니다
             </h1>
-            <div class="w-12 h-[1px] bg-amber-300 mx-auto mb-8"></div>
-            <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+            <div class="w-16 h-[1px] bg-amber-300 mx-auto mb-12"></div>
+            <p class="text-gray-700 leading-[2.2] text-xl md:text-2xl font-medium px-4">
                 세월의 깊이만큼 깊은 사랑을 주신<br>
                 어머니의 일흔 번째 생신을 맞이하여<br>
                 감사의 마음을 담아 작은 자리를 마련했습니다.
             </p>
         </div>
 
-        <div class="mt-12 fade-in delay-300">
-            <div class="text-center">
-                <p class="text-2xl font-semibold mb-2">2026년 6월 6일</p>
-                <p class="text-gray-500 tracking-widest text-base">토요일 오후 5시</p>
+        <div class="mt-16 fade-in delay-300 w-full max-w-sm">
+            <div class="text-center bg-amber-50 px-8 py-10 rounded-3xl border border-amber-100 shadow-sm">
+                <p class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">2026년 6월 6일</p>
+                <p class="text-amber-800 tracking-widest text-xl md:text-2xl font-bold">토요일 오후 5시</p>
             </div>
         </div>
     </section>
 
-    <!-- Details Section -->
-    <section class="max-w-lg mx-auto px-6 py-20 space-y-16">
+    <!-- 상세 정보 섹션 -->
+    <section class="max-w-lg mx-auto px-6 py-24 space-y-24">
         
-        <!-- Location -->
+        <!-- 장소 안내 -->
         <div class="text-center fade-in">
-            <h2 class="serif-title text-2xl font-bold mb-6 text-amber-800">장소</h2>
-            <p class="text-lg font-bold mb-1">마벨리에 평촌점</p>
-            <p class="text-gray-600 text-sm mb-4">경기 안양시 동안구 관평로 175 (1층)</p>
+            <h2 class="serif-title text-3xl font-bold mb-10 text-amber-900">장소 안내</h2>
+            <p class="text-2xl md:text-3xl font-bold mb-4 text-gray-900">마벨리에 평촌점</p>
+            <p class="text-gray-600 text-lg md:text-xl mb-10 leading-relaxed">경기 안양시 동안구 관평로 175 (1층)</p>
             
-            <div class="flex flex-col gap-3 mt-6">
-                <button onclick="copyAddress()" class="w-full py-3 border border-amber-200 text-amber-800 rounded-lg hover:bg-amber-50 transition-colors text-sm">
+            <div class="flex flex-col gap-4 mt-10">
+                <button onclick="copyAddress()" class="w-full py-4 border-2 border-amber-200 text-amber-900 rounded-xl hover:bg-amber-50 transition-colors text-lg font-bold">
                     주소 복사하기
                 </button>
-                <a href="https://map.kakao.com/link/search/마벨리에 평촌점" target="_blank" class="w-full py-3 bg-amber-800 text-white rounded-lg hover:bg-amber-900 transition-colors text-sm font-medium">
+                <a href="https://map.kakao.com/link/search/마벨리에 평촌점" target="_blank" class="w-full py-4 bg-amber-800 text-white rounded-xl hover:bg-amber-900 transition-colors text-lg font-bold shadow-md">
                     카카오맵으로 보기
                 </a>
-                <a href="https://map.naver.com/v5/search/마벨리에 평촌점" target="_blank" class="w-full py-3 bg-white border border-gray-200 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm">
+                <a href="https://map.naver.com/v5/search/마벨리에 평촌점" target="_blank" class="w-full py-4 bg-white border-2 border-gray-200 text-gray-700 rounded-xl hover:bg-gray-50 transition-colors text-lg font-bold">
                     네이버 지도로 보기
                 </a>
             </div>
         </div>
 
-        <!-- Inquiry Section -->
-        <div class="bg-amber-50 rounded-2xl p-8 text-center fade-in">
-            <h2 class="serif-title text-xl font-bold mb-4 text-amber-800">문의하기</h2>
-            <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+        <!-- 문의하기 섹션 -->
+        <div class="bg-amber-50 rounded-[2.5rem] p-10 text-center fade-in border border-amber-100 shadow-inner">
+            <h2 class="serif-title text-2xl font-bold mb-6 text-amber-900">문의하기</h2>
+            <p class="text-lg text-gray-700 mb-8 leading-[1.8]">
                 궁금하신 사항은 카카오톡으로<br>
                 편하게 연락주세요.
             </p>
             <div class="flex justify-center">
-                <a href="https://open.kakao.com/o/sOXYSmN_" target="_blank" class="flex items-center gap-2 bg-[#FEE500] text-[#3c1e1e] px-8 py-3 rounded-full font-bold hover:bg-[#FADA00] transition-colors shadow-sm">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                <a href="https://open.kakao.com/o/sOXYSmN_" target="_blank" class="flex items-center gap-3 bg-[#FEE500] text-[#3c1e1e] px-10 py-4 rounded-full font-black hover:bg-[#FADA00] transition-colors shadow-md text-xl">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 3c-4.97 0-9 3.185-9 7.115 0 2.557 1.707 4.8 4.315 6.055l-.845 3.102c-.102.373.12.743.483.822.115.024.23.012.336-.034l3.743-2.49c.32.027.643.04.968.04 4.97 0 9-3.185 9-7.115S16.97 3 12 3z"/>
                     </svg>
-                    카톡채널로 문의하기<br>(설지용)
+                    카톡 문의 (설지용)
                 </a>
             </div>
         </div>
 
     </section>
 
-    <!-- Footer -->
-    <footer class="py-20 text-center text-gray-400 text-xs">
+    <!-- 하단 -->
+    <footer class="py-24 text-center text-gray-400 text-sm">
         <p>© 2026 조선례 여사님 칠순 잔치</p>
     </footer>
 
-    <!-- Toast Message Container -->
-    <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-full text-sm opacity-0 transition-opacity duration-300 pointer-events-none z-50">
+    <!-- 복사 완료 메시지 -->
+    <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-gray-900 text-white px-8 py-4 rounded-full text-lg opacity-0 transition-opacity duration-300 pointer-events-none z-50 shadow-xl font-bold">
         주소가 복사되었습니다.
     </div>
 
