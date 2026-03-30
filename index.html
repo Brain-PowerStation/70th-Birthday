@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조선례 여사님 칠순 초대장</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Nanum+Myeongjo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nanum Myeongjo', serif;
+            background-color: #fcfaf7;
+        }
+        .serif-title {
+            font-family: 'Noto Serif KR', serif;
+        }
+        .fade-in {
+            animation: fadeIn 1.5s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex flex-col items-center justify-center bg-white px-6 py-20 shadow-sm">
+        <div class="fade-in text-center">
+            <p class="text-lg tracking-[0.2em] text-amber-700 mb-4">고희연(古稀宴)</p>
+            <h1 class="serif-title text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                조선례 여사님<br>칠순 잔치
+            </h1>
+            <div class="w-12 h-[1px] bg-amber-300 mx-auto mb-8"></div>
+            <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                세월의 깊이만큼 깊은 사랑을 주신<br>
+                어머니의 일흔 번째 생신을 맞이하여<br>
+                감사의 마음을 담아 작은 자리를 마련했습니다.
+            </p>
+        </div>
+
+        <div class="mt-16 fade-in delay-300">
+            <div class="text-center">
+                <p class="text-xl font-semibold mb-2">2026. 06. 06</p>
+                <p class="text-gray-500 uppercase tracking-widest text-sm">Saturday 05:00 PM</p>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 animate-bounce">
+            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="max-w-lg mx-auto px-6 py-20 space-y-16">
+        
+        <!-- Date & Time -->
+        <div class="text-center fade-in">
+            <h2 class="serif-title text-2xl font-bold mb-6 text-amber-800">일시</h2>
+            <p class="text-lg">2026년 6월 6일 토요일</p>
+            <p class="text-xl font-bold mt-1">오후 5시</p>
+        </div>
+
+        <!-- Location -->
+        <div class="text-center fade-in">
+            <h2 class="serif-title text-2xl font-bold mb-6 text-amber-800">장소</h2>
+            <p class="text-lg font-bold mb-1">마벨리에 평촌점</p>
+            <p class="text-gray-600 text-sm mb-4">경기 안양시 동안구 관평로 175 (1층)</p>
+            
+            <div class="flex flex-col gap-3 mt-6">
+                <button onclick="copyAddress()" class="w-full py-3 border border-amber-200 text-amber-800 rounded-lg hover:bg-amber-50 transition-colors text-sm">
+                    주소 복사하기
+                </button>
+                <a href="https://map.kakao.com/link/search/마벨리에 평촌점" target="_blank" class="w-full py-3 bg-amber-800 text-white rounded-lg hover:bg-amber-900 transition-colors text-sm font-medium">
+                    카카오맵으로 보기
+                </a>
+                <a href="https://map.naver.com/v5/search/마벨리에 평촌점" target="_blank" class="w-full py-3 bg-white border border-gray-200 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm">
+                    네이버 지도로 보기
+                </a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="bg-amber-50 rounded-2xl p-8 text-center fade-in">
+            <h2 class="serif-title text-xl font-bold mb-4 text-amber-800">문의 사항</h2>
+            <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                궁금하신 점은 아래 연락처로<br>
+                편하게 문의해 주세요.
+            </p>
+            <div class="flex justify-center">
+                <a href="tel:010-5688-5301" class="flex items-center gap-2 text-amber-800 font-bold border-b-2 border-amber-800 pb-1 text-lg hover:text-amber-600 hover:border-amber-600 transition-all">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+                    설지용 010-5688-5301
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 text-center text-gray-400 text-xs">
+        <p>© 2026 조선례 여사님 칠순 잔치</p>
+    </footer>
+
+    <!-- Toast Message Container -->
+    <div id="toast" class="fixed bottom-10 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-6 py-3 rounded-full text-sm opacity-0 transition-opacity duration-300 pointer-events-none z-50">
+        주소가 복사되었습니다.
+    </div>
+
+    <script>
+        function copyAddress() {
+            const address = "경기 안양시 동안구 관평로 175 (1층)";
+            const tempInput = document.createElement("input");
+            tempInput.value = address;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            const toast = document.getElementById('toast');
+            toast.style.opacity = '1';
+            setTimeout(() => {
+                toast.style.opacity = '0';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
